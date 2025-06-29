@@ -34,9 +34,9 @@ app.post("/generate-text", async (req, res) => {
   try {
     const prompt = req.body.prompt || "Write a story about a magic backpack.";
 
-    // const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
     // const model = genAI.getGenerativeModel({ model: "models/gemini-pro" });
-  const model = genAI.getGenerativeModel({ model: "models/text-bison-001" });
+  // const model = genAI.getGenerativeModel({ model: "models/text-bison-001" });
 
     const result = await model.generateContent(prompt);
     const response = await result.response;
