@@ -3,8 +3,6 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const axios = require("axios");
 const dotenv = require("dotenv");
-
-// ✅ Load env variables
 dotenv.config();
 
 const app = express();
